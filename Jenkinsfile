@@ -17,6 +17,7 @@ pipeline {
                 AWS_DEFAULT_REGION = credentials('AWS_DEFAULT_REGION')
                 AWS_BUCKET = credentials('AWS_BUCKET')
                 AWS_BUCKET_KEY = credentials('AWS_BUCKET_KEY')
+                TF_VAR_sub_net_cidr_block = "10.0.1.0/24"
             }
             steps {
                 script {
